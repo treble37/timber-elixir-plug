@@ -119,7 +119,10 @@ defmodule Timber.Plug.MixProject do
   defp deps do
     [
       {:plug, "~> 1.2"},
-      {:timber, "~> 3.1"},
+      {:timber,
+       git: "https://github.com/treble37/timber-elixir.git",
+       branch: "handle-hackney-exit",
+       override: true},
 
       #
       # Tooling
